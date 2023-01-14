@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- section hearder -->
+    <section id="header">
+            <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+    
+            <div>
+                <ul id="navbar">
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="shop.html" class="active">shop</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li id="bag-shopping"><a href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
+                </ul>
+            </div>
+    </section>
+
+    <section id="proDetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" id="mainImg">
+            
+
+            
+            <div class="small-pro-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" id="smallImg" onclick="choose('img/products/f1.jpg')">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" id="smallImg" onclick="choose('img/products/f2.jpg')">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" id="smallImg" onclick="choose('img/products/f3.jpg')">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" id="smallImg" onclick="choose('img/products/f4.jpg')">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>home / t-shirt</h6>
+            <h4>men's fashion t-shirt</h4>
+            <h2>$149.00</h2>
+            <select>
+                <option>select size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1">
+            <button class="cart">add to cart</button>
+            <h4>product details</h4>
+            <span>the gildan ultra cotton t-shirt is made from a substantial 6.0 oz. per sq yd . fabric constructed from 100% cotton, this classic fit preshrunk jersey knit provides inmatched comfort with each wear. featuring a taped neck and shoulder, and a seamless doulr-needle coller, and available in a range of colors, it offers it all in the ultimate head-turning package.</span>
+        </div>
+    </section>
+    <section id="product1" class="section-p1">
+        <h2>featured products</h2>
+        <p>summer collection new modern design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>cartoon astronaut t-shirts</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>cartoon astronaut t-shirts</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>cartoon astronaut t-shirts</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n4.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>cartoon astronaut t-shirts</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa fa-cart-shopping cart"></i></a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newsText">
+            <h4>sign up for newsletters</h4>
+            <p>get e-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your E-mail Address">
+            <button>sign up</button>
+        </div>
+    </section>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="img/logo.png" alt="">
+            <h4>contact</h4>
+            <p><span>address:</span> 5 muhamed osman - el-matarya - cairo - egypt</p>
+            <p><span>phone:</span> +20 01099132966</p>
+            <h5>follow us</h5>
+            <div class="socialIcons">
+                <i class="fa-brands fa-facebook-f iocn iocnFollow"></i>
+                <i class="fa-brands fa-twitter iocn iocnFollow"></i>
+                <i class="fa-brands fa-instagram iocn iocnFollow"></i>
+                <i class="fa-brands fa-pinterest-p iocn iocnFollow"></i>
+                <i class="fa-brands fa-youtube iocn iocnFollow"></i>
+            </div>
+        </div>
+        <div class="col2">
+            <h4>about</h4>
+            <a href="#">about us</a>
+            <a href="#">delivary information</a>
+            <a href="#">privacy policy</a>
+            <a href="#">terms & conditions</a>
+            <a href="#">contact us</a>
+        </div>
+        <div class="col2">
+            <h4>my account</h4>
+            <a href="#">sign in</a>
+            <a href="#">view cart</a>
+            <a href="#">my wishlist</a>
+            <a href="#">track my order</a>
+            <a href="#">help</a>
+        </div>
+        <div class="col3">
+            <h4>instal app</h4>
+            <p>from app store or google olay</p>
+            <div class="installApp">
+                <img src="img/pay/app.jpg" class="payApp">
+                <img src="img/pay/play.jpg" class="payPlay">
+            </div>
+            <p>secured payment gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

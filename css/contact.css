@@ -1,0 +1,336 @@
+/* Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: rgb(46, 46, 46);
+}
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: rgb(46, 46, 46);
+}
+h4 {
+    font-size: 20px;
+    color: rgb(46, 46, 46);
+}
+h6 {
+    font-size: 12px;
+    font-weight: 700;
+}
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1 {
+    padding: 60px 80px;
+}
+.section-m1 {
+    margin: 40px 0;
+}
+body {
+    width: 100%;
+}
+
+
+/* navbar page */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#header #navbar {
+    display: flex;
+}
+#header #navbar li {
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+}
+#header #navbar li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #465b52;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+#header #navbar li a:hover, #header #navbar li a.active {
+    color: #0bc7ba;
+}
+#header #navbar li a.active::after , #header #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #0bc7ba;
+    bottom: -10%;
+    left: 20px;
+    position: absolute;
+}
+#header #mobile {
+    display: none;
+    align-items: center;
+}
+#close {
+    display: none;
+}
+
+
+/* home page */
+#hero {
+    background-image: url(../img/about/banner.png);
+    background-size: cover;
+    background-position: top 25% right 0;
+    height: 45vh;
+    width: 100%;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hero p {
+    text-transform: capitalize;
+}
+#hero p .span {
+    text-transform: uppercase;
+}
+#hero h2 , #hero p {
+    color: #fff;
+}
+
+
+#contact-details {
+    display: flex;
+    justify-content: space-between;
+}
+#contact-details .details {
+    margin-top: 75px;
+}
+#contact-details .details span , #form-details form span {
+    text-transform: uppercase;
+    color: rgb(138, 135, 135);
+    font-weight: 600;
+}
+#contact-details .details h2 ,#form-details form h2 {
+    text-transform: capitalize;
+    font-size: 27px;
+    line-height: 35px;
+    margin-top: 20px;
+}
+#contact-details .details h3 {
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+#contact-details .details div {
+    margin-top: 20px;
+}
+#contact-details .details div li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#contact-details .details div li p {
+    margin-left: 20px;
+}
+
+
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e1e1e1;
+    margin: 30px;
+    padding: 75px;
+}
+#form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form input , #form-details form textarea {
+    width: 100%;
+    padding: 8px 15px;
+    outline: none;
+    margin-top: 20px;
+    border: 1px solid #e1e1e1;
+}
+#form-details form button {
+    color: #fff;
+    width: 130px;
+    height: 45px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 1s;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #078a81;
+    margin-top: 20px;
+    transition: 1s;
+}
+#form-details form button:hover{
+    background-color: #02a79cfd;
+}
+#form-details .people {
+    width: 28%;
+}
+#form-details .people div {
+    display: flex;
+    align-items: center;
+}
+#form-details .people div img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+#form-details .people div p span {
+    color: #000;
+    font-weight: 600;
+}
+#form-details .people div p {
+    text-transform: capitalize;
+}
+
+
+
+
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../img/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+#newsletter .newsText h4 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+#newsletter .newsText p {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+#newsletter .newsText p span {
+    color: rgb(255, 174, 0);
+}
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+#newsletter .form input {
+    height: 45px;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter .form button {
+    color: #fff;
+    width: 130px;
+    height: 45px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 1s;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #0abeb2ce;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+footer .col img {
+    padding-bottom: 20px;
+}
+footer .col h4 {
+    text-transform: capitalize;
+}
+footer .col p span {
+    color: rgb(94, 93, 93);
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+footer .col p {
+    text-transform: capitalize;
+    margin-bottom: -12px;
+    color: gray;
+}
+footer .col h5 {
+    padding: 30px 0;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+footer .col .socialIcons .iocnFollow {
+    color: #028077ce;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .col2 h4 {
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+footer .col2 a {
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    display: block;
+    text-decoration: none;
+    color: gray;
+}
+footer .col3 h4 {
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+footer .col3 p {
+    text-transform: capitalize;
+    margin-bottom: -8px;
+    padding-bottom: 15px;
+    color: gray;
+}
+footer .col3 img {
+    width: 70%;
+}
+footer .col3 .payApp , .section-p1 .col3 .payPlay {
+    border: 1px solid #028077ce;
+border-radius: 6px;
+}
+
+footer .col3 .installApp {
+    display: flex;
+    justify-content: space-between;
+}
+footer .col .socialIcons .iocnFollow:hover , .section-p1 .col2 a:hover {
+    color: #053633;
+}
